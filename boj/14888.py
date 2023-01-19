@@ -40,8 +40,6 @@ max_answer = 0
 min_answer = 0 
 is_first = True 
 for p in permutations(operand_list, len(operand_list)):
-    if p == (1,3,0,0,2):
-        print("tmp")
     val = solution(numbers, list(p))
     if is_first:
         max_answer = val 
