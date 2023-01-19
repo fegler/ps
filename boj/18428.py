@@ -25,7 +25,7 @@ def check_(board, teacher):
         for x,y in teacher:
             now_x, now_y = x, y
             while True:
-                now_x, now_y = now_x+dx[i], y+dy[i]
+                now_x, now_y = now_x+dx[i], now_y+dy[i]
                 if now_x<0 or now_x>=N or now_y<0 or now_y>=N or board[now_x][now_y] == 'O':
                     break 
                 if board[now_x][now_y] == 'S':
